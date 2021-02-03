@@ -5,7 +5,15 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                git url: 'https://github.com/CristhianFG/hello-selenium-junit.git'
+                git url: 'https://github.com/CristhianFG/hello-selenium-junit.git' 
+           }
+        }
+        stage('Build') {
+            steps {
+                withGradle {
+                    sh './gradlew assemble'
+                    sh './gradlew build'
+                }    
             }
         }
         stage('Test') {
