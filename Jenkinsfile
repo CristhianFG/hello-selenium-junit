@@ -3,11 +3,17 @@ pipeline {
     agent any
 
     stages {
+        stage('Setup') {
+            steps {
+                git url: 'https://github.com/CristhianFG/hello-selenium-junit.git', branch: 'main'
+           }
+        }
         stage('Build') {
             steps {
-                git url: 'https://github.com/CristhianFG/hello-selenium-junit.git' 
-                sh './gradlew assemble'
-           }
+                withGradle {
+                     sh './gradlew assemble'
+                }
+            }
         }
         stage('Test') {
             steps {
