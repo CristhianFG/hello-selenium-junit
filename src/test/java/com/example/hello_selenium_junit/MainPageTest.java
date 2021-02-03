@@ -27,7 +27,7 @@ public class MainPageTest {
         Configuration.startMaximized = true;
         open("https://www.jetbrains.com/");
     }
-
+/*
     @Test
     public void search() {
         mainPage.searchButton.click();
@@ -52,5 +52,5 @@ public class MainPageTest {
         $(byClassName("products-list")).shouldBe(visible);
 
         assertEquals("All Developer Tools and Products by JetBrains", Selenide.title());
-    }
+    }*/
 }

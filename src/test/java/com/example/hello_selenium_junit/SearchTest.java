@@ -19,7 +19,10 @@ public class SearchTest {
             FirefoxOptions options = new FirefoxOptions();
             options.setHeadless(true);
             driver = new FirefoxDriver();
-            js = (JavascriptExecutor) driver;
+            //Configuration.startMaximized =
+            //open("about:blank");
+            //driver = getWebDriver();
+	    js = (JavascriptExecutor) driver;
             vars = new HashMap<String, Object>();
         }
         @AfterEach

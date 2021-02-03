@@ -30,10 +30,10 @@ public class PrecioTest {
     public void tearDown() {
         driver.quit();
     }
-    @Test
+    /*@Test
     public void test() {
         driver.get("http://localhost:3006/");
-        //TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(3);
         driver.manage().window().setSize(new Dimension(1533, 873));
         driver.findElement(By.cssSelector(".ng-scope:nth-child(1) > td .input-group-append > .btn")).click();
         vars.put("p1", driver.findElement(By.cssSelector("tr:nth-child(1) > .ng-binding:nth-child(2)")).getText());
@@ -47,6 +47,6 @@ public class PrecioTest {
         System.out.println("Wine=vars.get('p3').toString()");
         System.out.println("Total=vars.get('total').toString()");
         assertEquals(vars.get("total").toString(), "€6.25");
-    }
+    }*/
 }
 
