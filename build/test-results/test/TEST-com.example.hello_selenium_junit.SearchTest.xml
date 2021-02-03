@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.hello_selenium_junit.SearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T14:28:10" hostname="ubuntu" time="11.586">
+  <properties/>
+  <testcase name="searchdevopsprivacity()" classname="com.example.hello_selenium_junit.SearchTest" time="11.586"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1612362491158	geckodriver	INFO	Listening on 127.0.0.1:1951
+1612362491929	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXjqn60"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612362496360	Marionette	INFO	Listening on port 38281
+1612362496495	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 3:28:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1612362500264	Marionette	INFO	Stopped listening on port 38281
+]]></system-err>
+</testsuite>
