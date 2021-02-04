@@ -24,7 +24,7 @@ public class WandaVisionTest {
     public void tearDown() {
         driver.quit();
     }
-    @Test
+   /* @Test
     public void iMBD() throws InterruptedException {
         driver.get("https://www.imdb.com/");
         driver.findElement(By.id("suggestion-search")).click();
@@ -32,5 +32,5 @@ public class WandaVisionTest {
         driver.findElement(By.id("suggestion-search")).sendKeys(Keys.ENTER);
         Thread.sleep(10000);
         driver.findElement(By.linkText("WandaVision")).click();
-    }
+    }*/
 }

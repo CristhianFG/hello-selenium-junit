@@ -29,7 +29,7 @@ public class SearchTest {
         public void tearDown() {
             driver.quit();
         }
-        @Test
+       /* @Test
         public void searchdevopsprivacity() {
             driver.get("https://www.google.es/");
             driver.manage().window().setSize(new Dimension(731, 768));
@@ -38,6 +38,6 @@ public class SearchTest {
             driver.switchTo().defaultContent();
             driver.findElement(By.name("q")).sendKeys("devops");
             driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        }
+        }*/
 
 }
