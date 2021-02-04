@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.hello_selenium_junit.WandaVisionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T15:08:04" hostname="ubuntu" time="32.769">
+<testsuite name="com.example.hello_selenium_junit.WandaVisionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T18:47:17" hostname="ubuntu" time="25.477">
   <properties/>
-  <testcase name="iMBD()" classname="com.example.hello_selenium_junit.WandaVisionTest" time="32.769"/>
+  <testcase name="iMBD()" classname="com.example.hello_selenium_junit.WandaVisionTest" time="25.477"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1612364885794	geckodriver	INFO	Listening on 127.0.0.1:16748
-1612364886553	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileE5Cv8Y"
+  <system-err><![CDATA[1612378037411	geckodriver	INFO	Listening on 127.0.0.1:9308
+1612378037429	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileS3I1ZW"
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1612364890933	Marionette	INFO	Listening on port 35147
-1612364891049	Marionette	WARN	TLS certificate errors will be ignored for this session
-Feb 03, 2021 4:08:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1612378041010	Marionette	INFO	Listening on port 35223
+1612378041102	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 7:47:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
-1612364915801	Marionette	INFO	Stopped listening on port 35147
+1612378061525	Marionette	INFO	Stopped listening on port 35223
 ]]></system-err>
 </testsuite>
