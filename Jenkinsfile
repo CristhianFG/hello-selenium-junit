@@ -13,8 +13,8 @@ pipeline {
         stage('Test') {
             steps {
                 withGradle {
-                    sh './gradlew clean test -Dbrowser=firefox'
-                    sh './gradlew clean test -Dbrowser=chrome'
+                    sh './gradlew clean test -Dbrowser.firefox'
+                    sh './gradlew clean test -Dbrowser.chrome'
                 }
             }
             post {
