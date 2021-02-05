@@ -29,7 +29,11 @@ public class WandavisionTest {
 
   @Test
   public void test() throws MalformedURLException {
-    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"));
+    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444")); 
+    ChromeOptions chromeOptions = new ChromeOptions();	      
+    //FirefoxOptions firefoxOptions = new FirefoxOptions();	
+    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);	       
+    //driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), firefoxOptions);
 
     //Prueba de iMDB
     driver.get("https://www.imdb.com/");
