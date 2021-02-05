@@ -4,7 +4,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
@@ -30,9 +29,7 @@ public class WandavisionTest {
 
   @Test
   public void test() throws MalformedURLException {
-    //Seleccion de navegador
-    //ChromeOptions chromeOptions = new ChromeOptions();
-    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444")/*, chromeOptions*/);
+    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"));
 
     //Prueba de iMDB
     driver.get("https://www.imdb.com/");
