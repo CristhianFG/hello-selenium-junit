@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class IMBDTest {
+public class WandavisionTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
