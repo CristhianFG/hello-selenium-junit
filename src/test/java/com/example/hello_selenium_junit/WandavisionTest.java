@@ -15,7 +15,7 @@ import java.util.Map;
 public class WandavisionTest {
   private WebDriver driver;
   private Map<String, Object> vars;
-  private string navegador = "chrome";
+  private String navegador = "chrome";
   JavascriptExecutor js;
 
   @BeforeEach
