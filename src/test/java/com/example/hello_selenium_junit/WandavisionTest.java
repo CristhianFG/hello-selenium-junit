@@ -13,13 +13,12 @@ import java.util.Map;
 
 public class WandavisionTest {
   private WebDriver driver;
+  private String browser;
   private Map<String, Object> vars;
-  JavascriptExecutor js;
 
   @BeforeEach
   public void setUp() {
-    js = (JavascriptExecutor) driver;
-    vars = new HashMap<String, Object>();
+    driver = getWebDriver();
   }
 
   @AfterEach
