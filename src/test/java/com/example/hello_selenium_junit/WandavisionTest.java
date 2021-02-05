@@ -15,7 +15,6 @@ import java.util.Map;
 public class WandavisionTest {
   private WebDriver driver;
   private Map<String, Object> vars;
-  private String navegador = "chrome";
   JavascriptExecutor js;
 
   @BeforeEach
@@ -32,13 +31,8 @@ public class WandavisionTest {
   @Test
   public void test() throws MalformedURLException {
     //Seleccion de navegador
-    if(navegador == "chrome"){
-       ChromeOptions chromeOptions = new ChromeOptions();
-       driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);
-    } else if(navegador == "firefox"){
-       FirefoxOptions firefoxOptions = new FirefoxOptions();
-       driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), firefoxOptions);
-    }
+    //ChromeOptions chromeOptions = new ChromeOptions();
+    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444")/*, chromeOptions*/);
 
     //Prueba de iMDB
     driver.get("https://www.imdb.com/");
