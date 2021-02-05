@@ -18,6 +18,7 @@ public class WandavisionTest {
 
   @BeforeEach
   public void setUp() {
+    open("about:blank");
     driver = getWebDriver();
   }
 
