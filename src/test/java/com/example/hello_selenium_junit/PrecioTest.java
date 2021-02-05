@@ -7,11 +7,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +24,6 @@ public class PrecioTest {
     JavascriptExecutor js;
     @BeforeEach
     public void setUp() {
-        driver = new FirefoxDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
@@ -30,10 +31,13 @@ public class PrecioTest {
     public void tearDown() {
         driver.quit();
     }
-    /*@Test
-    public void test() {
-        driver.get("http://localhost:3006/");
-        TimeUnit.SECONDS.sleep(3);
+    @Test
+    public void test() throws MalformedURLException {
+        //Seleccion de navegador
+        ChromeOptions chromeOptions = new ChromeOptions();
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444"), chromeOptions);
+
+        driver.get("http://10.250.1.5:3000");
         driver.manage().window().setSize(new Dimension(1533, 873));
         driver.findElement(By.cssSelector(".ng-scope:nth-child(1) > td .input-group-append > .btn")).click();
         vars.put("p1", driver.findElement(By.cssSelector("tr:nth-child(1) > .ng-binding:nth-child(2)")).getText());
@@ -47,6 +51,6 @@ public class PrecioTest {
         System.out.println("Wine=vars.get('p3').toString()");
         System.out.println("Total=vars.get('total').toString()");
         assertEquals(vars.get("total").toString(), "€6.25");
-    }*/
+    }
 }
 
