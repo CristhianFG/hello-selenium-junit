@@ -1,10 +1,6 @@
 com/example/hello_selenium_junit/MainPageTest.java
  com.example.hello_selenium_junit.MainPageTest
-com/example/hello_selenium_junit/IMBDTest.java
- com.example.hello_selenium_junit.IMBDTest
-com/example/hello_selenium_junit/WandaVisionTest.java
- com.example.hello_selenium_junit.WandaVisionTest
-com/example/hello_selenium_junit/SearchTest.java
- com.example.hello_selenium_junit.SearchTest
 com/example/hello_selenium_junit/PrecioTest.java
  com.example.hello_selenium_junit.PrecioTest
+com/example/hello_selenium_junit/SearchTest.java
+ com.example.hello_selenium_junit.SearchTest

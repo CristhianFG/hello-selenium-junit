@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.qameta.allure' version '2.8.1'
+    id 'checkstyle'
 }
 
 group 'com.example'
@@ -46,10 +47,10 @@ allure {
 }
 
 checkstyle{
-    config = rootProject(resources.text.fromFile('config/checkstyle/checkstyle.xml'))
+  //  config = rootProject(resources.text.fromFile('config/checkstyle/checkstyle.xml'))
     ignoreFailures = true
 }
 
-checkSstyleTest {
+checkstyleTest {
     source = 'src/test/java'
 }
