@@ -20,7 +20,7 @@ pipeline {
                 always {
                     junit 'build/test-results/**/TEST-*.xml'
                     recordIssues{
-                        enabledForFailure: true, aggregatingResults: true,
+                        enabledFailure: true, aggregatingResults: true,
                         tools: [java(), checkStyle(pattern: 'build/reports/checkstyle/*_xml', reportEncoding: 'UTF-8')]
                     }
                     publishHTML {target: [
