@@ -20,9 +20,19 @@ pipeline {
                 always {
                     junit 'build/test-results/**/TEST-*.xml'
                     recordIssues{
-                        enabledForFailure: true
-                        tools: checkStyle(pattern: 'build/reports/checkstyle/*-xml')
+                        enabledFailure: true, aggregatingResults: true,
+                        tools: [java(), checkStyle(pattern: 'build/reports/checkstyle/*_xml', reportEncoding: 'UTF-8')]
                     }
+                    publishHTML {target: [
+                        reportDir: 'build/reports/checkstyle/',
+                        reportFiles: 'main.html',
+                        reportName: 'Report checkstyle'
+                    ]}
+                    publishHML {target: [
+                        reportDir: 'build/reports/checkstyle/',
+                        reportFiles: 'test.html',
+                        reportName: 'Report checkstyle'
+                    ]}
                 }
             }
         }
