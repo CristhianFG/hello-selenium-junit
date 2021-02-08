@@ -14,14 +14,14 @@ pipeline {
             steps {
                 withGradle {
                     sh './gradlew clean test '
-                    sh './gradlew check'                }
+                    sh './gradlew check'                
+                }
             }
             post {
                 always {
                     junit 'build/test-results/**/TEST-*.xml'
                     recordIssues{
-                        enabledForFailure: true, 
-                        //aggregatingResults: 'true',
+                        enabledForFailure: true,
                         tools: checkStyle(pattern: 'build/reports/checkstyle/*.xml')
                     }
                 }
