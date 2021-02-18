@@ -20,10 +20,10 @@ pipeline {
             post {
                 always {
                     junit 'build/test-results/**/TEST-*.xml'
-                    recordIssues{
+                    recordIssues(
                         enabledForFailure: true,
                         tools: checkStyle(pattern: 'build/reports/checkstyle/*.xml')
-                    }
+                    )
                 }
             }
         }
